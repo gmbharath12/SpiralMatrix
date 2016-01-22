@@ -77,12 +77,12 @@ void printSpiralWithArray(NSArray* array)
         return;
     }
     NSArray* tempArray;
-    int endRowIndex = [array count];//m
+    int endRowIndex = (int) [array count];
     //assuming all the inner array are of same size.
-    int endColumnIndex = [[array lastObject] count]; //n
-    int startColumnIndex = 0;//l
+    int endColumnIndex = (int) [[array lastObject] count];
+    int startColumnIndex = 0;
     int iterator = startColumnIndex;
-    int startRowIndex = 0; //k
+    int startRowIndex = 0;
     while (startRowIndex < endRowIndex && startColumnIndex < endColumnIndex)
     {
         tempArray = [array objectAtIndex:startRowIndex];
